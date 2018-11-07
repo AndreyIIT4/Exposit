@@ -75,9 +75,8 @@ public class EmailPasswordActivity extends AppCompatActivity implements  View.On
                 if (task.isSuccessful()) {
                     Toast.makeText(EmailPasswordActivity.this, "Авторизация успешна", Toast.LENGTH_SHORT).show();
 /////
-                    Intent intent = new Intent(EmailPasswordActivity.this, MainActivity.class);
+                    Intent intent=new Intent(EmailPasswordActivity.this,MainActivity.class);
                     startActivity(intent);
-
 
                 }else{
                     Toast.makeText(EmailPasswordActivity.this, "Авторизация провалена", Toast.LENGTH_SHORT).show();
@@ -93,7 +92,7 @@ public class EmailPasswordActivity extends AppCompatActivity implements  View.On
                 if (task.isSuccessful()){
                     Toast.makeText(EmailPasswordActivity.this, "Регистрация успешна", Toast.LENGTH_SHORT).show();
                     ////////////
-                    Intent intent = new Intent(EmailPasswordActivity.this, MainActivity.class);
+                    Intent intent=new Intent(EmailPasswordActivity.this,MainActivity.class);
                     startActivity(intent);
                 }else{
                     Toast.makeText(EmailPasswordActivity.this, "Регистрация провалена", Toast.LENGTH_SHORT).show();
